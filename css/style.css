@@ -6,9 +6,6 @@
     box-sizing: border-box;
 }
 
-.inner {
-    width: 1100px;
-}
 
 header {
     display: flex;/*よこ並べ*/
@@ -20,7 +17,7 @@ header {
 }
 
 .logo-icon {
-    margin: 15px;
+    margin: 15px 0;
     color: #777;
 }
 
@@ -38,11 +35,41 @@ header {
 .keyvisual {
     width: 100%;
     height: auto;
+    padding: 0;
+}
+
+.inner {
+    /* width: 1100px; これいれるとおかしくなる */
+    /* margin: 0 auto;
+    padding: 0; */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    /* 画像に重ねるときのtextの書き方 */
+    position: absolute;
+    /* 親[.container]を絶対位置として場所をとっている */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .maintitle {
     font-size: 65px;
     font-weight: 700;
+    white-space: nowrap; 
+    /* テキストを折り返ししない */
     color: #6ba7eb;
 }
 
