@@ -33,9 +33,43 @@ i {
     color: #fff;
     text-align: center;
 }
+
 .news {
+   
     background-color: #e3f2fd;
-    height: 100px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.news .inner {
+    /* newsの中のinnerに反映するよってこと */
+     display: flex;
+     justify-content: space-between;
+}
+
+.news-icon {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.news-content {
+    max-width: 600px;
+    word-break:break-all;
+    text-align: left;
+}
+
+
+.news-title {
+    margin: 20px 0 35px 0;
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.news-text {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
 }
 
 .skills {
