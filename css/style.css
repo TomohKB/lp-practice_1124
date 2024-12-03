@@ -73,18 +73,85 @@ i {
 }
 
 .skills {
-    background-color: #6ba7eb;
-    height: 100px;
+    background-color: #fff;
+}
+
+.skills-title {
+    padding-top: 50px;
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    justify-items: center;
+}
+
+.grid-item img {
+    width: 300px;
+    height: 300px;
 }
 
 .plan {
     background-color: #d0dfea;
-    height: 100px;
 }
 
-.sns {
-    background-color: #e3f2fd;
-    height: 100px;
+.plan-title {
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.table-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #6ba7eb;
+    font-size: 16px;
+    line-height: 16px;
+    border-left: 2px solid #fff;
+}
+
+th:first-child {
+    border-left: none;
+}
+
+td {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+td:first-child {
+    font-weight: bold
+}
+
+tr:nth-child(odd) {
+    background-color: #e0efff;
+    /* 偶数列 */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+    /* 奇数列 */
 }
 
 .inner {
@@ -97,81 +164,3 @@ footer {
     height: 100px;
 }
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/* header {
-    display: flex;/*よこ並べ*/
-    justify-content: space-between; /*左右に配置*/
-    align-items: center;/*縦方向の中央揃え*/
-    background-color: #fff;
-    padding: 10px 40px;
-    border-bottom: 1px solid #ccc
-} */
-
-/* .logo-icon {
-    margin: 15px 0;
-    color: #777;
-} */
-
-/* .contact-button {
-    background-color: #6ba7eb;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 15px 0;
-    border: none;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-} */
-
-/* .keyvisual {
-    width: 100%;
-    height: auto;
-    padding: 0;
-} */
-
-/* .inner {
-    /* width: 1100px; これいれるとおかしくなる */
-    /* margin: 0 auto;
-    padding: 0; */
-} */
-
-/* .container {
-    position: relative;
-    width: 100%;
-    background-size: cover;
-} */
-
-/* .container img {
-    width: 100%;
-    height: auto;
-} */
-
-/* .text-overlay {
-    /* 画像に重ねるときのtextの書き方 */
-    position: absolute;
-    /* 親[.container]を絶対位置として場所をとっている */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-} */
-
-/* .maintitle {
-    font-size: 65px;
-    font-weight: 700;
-    white-space: nowrap; 
-    /* テキストを折り返ししない */
-    /* color: #6ba7eb;
-} */ */
-
-/* .subtitle {
-    font-size: 40px;
-    font-weight: 700;
-    color: #fff;
-} */ */
