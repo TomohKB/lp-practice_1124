@@ -2,12 +2,32 @@
 
 header {
     background-color: #fff;
-    height: 100px;
+    padding: 15px 0;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
 i {
     height: 16px;
     width: 16px;
+    color: #777;
+}
+
+.contact-button {
+    background-color: #6ba7eb;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    /* 下線を消す */
+}
+
+.contact-button:hover {
+    background-color: #333;
+    transition: color 0.3s;
+    transition: opacity 0.3s ease;
 }
 
 .keyvisual {
@@ -74,10 +94,11 @@ i {
 
 .skills {
     background-color: #fff;
+    padding-top: 50px;
+    /* なんか50pxあると上手く見えない */
 }
 
 .skills-title {
-    padding-top: 50px;
     font-size: 40px;
     letter-spacing: 10px;
     text-align: center;
@@ -93,8 +114,14 @@ i {
 .grid-item img {
     width: 300px;
     height: 300px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    /* 滑らかに変化するようになる */
 }
 
+.grid-item img:hover {
+    opacity: 1.0;
+}
 .plan {
     background-color: #d0dfea;
 }
@@ -107,10 +134,9 @@ i {
 }
 
 .table-container {
-    width: 90%;
-    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
-
+    padding: 0;
 }
 
 .table {
@@ -120,7 +146,7 @@ i {
 }
 
 th, td {
-    padding: 10px;
+    padding: 10px ;
     text-align: center;
 }
 
@@ -128,11 +154,8 @@ th {
     background-color: #6ba7eb;
     font-size: 16px;
     line-height: 16px;
-    border-left: 2px solid #fff;
-}
-
-th:first-child {
-    border-left: none;
+    white-space: nowrap;
+    /* セル内で折り返すなっていう指示 */
 }
 
 td {
@@ -154,13 +177,44 @@ tr:nth-child(even) {
     /* 奇数列 */
 }
 
+.sns {
+    background-color: #e3f2fd;
+    padding: 200px 0;
+    text-align: center;
+    /* なんでこれで↑真ん中にアイコンが並ぶの？ */
+}
+
+.sns-icon {
+    width: 185px;
+    padding: 25px 0; 
+    color: #8c8c8c;
+    overflow: hidden;
+    font-size: 40px;
+}
+
+.sns-icon:hover {
+    background-color: #fff;
+    transition: color 0.5s;
+    /* なんか違う気がする */
+}
 .inner {
     width: 1100px;
     margin: 0 auto;
 }
 
 footer {
-    background-color: #cfd;
-    height: 100px;
+    background-color: #cfd8dc;
+    padding: 25px 0;
 }
 
+.text-footer {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-align: right;
+    padding-right: 50px;
+}
+
+
+・聞くこと
+・skillsとplanの余白
+・plabのwidth
