@@ -73,11 +73,10 @@ i {
 }
 
 .news-content {
-    max-width: 600px;
+    max-width: 650px;
     word-break:break-all;
     text-align: left;
 }
-
 
 .news-title {
     margin: 20px 0 35px 0;
@@ -95,23 +94,27 @@ i {
 .skills {
     background-color: #fff;
     padding-top: 50px;
-    /* なんか50pxあると上手く見えない */
 }
 
 .skills-title {
     font-size: 40px;
     letter-spacing: 10px;
     text-align: center;
+    margin: 0;
+    /* この要素のmarginを打ち消すよって意味 */
 }
 
 .grid-container {
+    padding: 50px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* 前がgridの分割数。後ろ1frは列幅を均等に分割するって意味 */
     gap: 100px;
     justify-items: center;
 }
 
 .grid-item img {
+    /* 子要素　左から配置される */
     width: 300px;
     height: 300px;
     opacity: 0.7;
@@ -122,24 +125,26 @@ i {
 .grid-item img:hover {
     opacity: 1.0;
 }
+
 .plan {
     background-color: #d0dfea;
+    padding-top: 50px;
 }
 
 .plan-title {
     font-size: 40px;
     letter-spacing: 10px;
     text-align: center;
-    padding: 50px 0;
+    margin: 0;
+    /* この要素のmarginを打ち消すよって意味 */
 }
 
 .table-container {
     width: 100%;
-    margin: 0 auto;
-    padding: 0;
+    padding: 50px 0;
 }
 
-.table {
+table {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
@@ -148,6 +153,12 @@ i {
 th, td {
     padding: 10px ;
     text-align: center;
+    border-left:  2px solid #fff;
+}
+
+th:first-child, td:first-child {
+    /* thとtdの初めのborderを打ち消すって意味 */
+    border: none;
 }
 
 th {
@@ -193,10 +204,10 @@ tr:nth-child(even) {
 }
 
 .sns-icon:hover {
-    background-color: #fff;
-    transition: color 0.5s;
-    /* なんか違う気がする */
+    color: #fff;
+    transition: 0.5s;
 }
+
 .inner {
     width: 1100px;
     margin: 0 auto;
@@ -212,9 +223,5 @@ footer {
     letter-spacing: 0.5px;
     text-align: right;
     padding-right: 50px;
+    font-weight: bold;
 }
-
-
-・聞くこと
-・skillsとplanの余白
-・plabのwidth
