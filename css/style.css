@@ -1,227 +1,291 @@
 @charset "utf-8";
 
 header {
-    background-color: #fff;
-    padding: 15px 0;
+  background-color: #fff;
+  padding: 15px 0;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
 }
 i {
-    height: 16px;
-    width: 16px;
-    color: #777;
+  height: 16px;
+  width: 16px;
+  color: #777;
 }
 
 .contact-button {
-    background-color: #6ba7eb;
-    color: #fff;
-    padding: 10px;
-    text-decoration: none;
-    /* 下線を消す */
+  background-color: #6ba7eb;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  /* 下線を消す */
 }
 
 .contact-button:hover {
-    background-color: #333;
-    transition: color 0.3s;
-    transition: opacity 0.3s ease;
+  background-color: #333;
+  transition: color 0.3s;
+  transition: opacity 0.3s ease;
 }
 
 .keyvisual {
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/keyvisual/keyvisual.jpg);
-    /* 画像を背景として使ってる */
-    background-size: cover;
-    padding: 400px 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/keyvisual/keyvisual.jpg);
+  /* 画像を背景として使ってる */
+  background-size: cover;
+  padding: 400px 0;
 }
 
 .keyvisual-title {
-    font-size: 65px;
-    font-weight: 700;
-    color: #6ba7eb;
-    text-align: center;
-    margin-bottom: 30px;
+  font-size: 65px;
+  font-weight: 700;
+  color: #6ba7eb;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .keyvisual-subtitle {
-    font-size: 40px;
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
 }
 
 .news {
-   
-    background-color: #e3f2fd;
-    padding-top: 50px;
-    box-sizing: border-box;
+  background-color: #e3f2fd;
+  padding-top: 50px;
+  box-sizing: border-box;
 }
 .news .inner {
-    /* newsの中のinnerに反映するよってこと */
-     display: flex;
-     justify-content: space-between;
+  /* newsの中のinnerに反映するよってこと */
+  display: flex;
+  justify-content: space-between;
 }
 
 .news-icon {
-    width: 250px;
-    height: auto;
-    object-fit: contain;
+  width: 250px;
+  height: auto;
+  object-fit: contain;
 }
 
 .news-content {
-    max-width: 650px;
-    word-break:break-all;
-    text-align: left;
+  max-width: 650px;
+  word-break: break-all;
+  text-align: left;
 }
 
 .news-title {
-    margin: 20px 0 35px 0;
-    font-size: 40px;
-    letter-spacing: 10px;
-    text-align: center;
+  margin: 20px 0 35px 0;
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-align: center;
 }
 
 .news-text {
-    font-size: 15px;
-    line-height: 18px;
-    text-align: center;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
 }
 
 .skills {
-    background-color: #fff;
-    padding-top: 50px;
+  background-color: #fff;
+  padding-top: 50px;
 }
 
 .skills-title {
-    font-size: 40px;
-    letter-spacing: 10px;
-    text-align: center;
-    margin: 0;
-    /* この要素のmarginを打ち消すよって意味 */
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-align: center;
+  margin: 0;
+  /* この要素のmarginを打ち消すよって意味 */
 }
 
 .grid-container {
-    padding: 50px 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* 前がgridの分割数。後ろ1frは列幅を均等に分割するって意味 */
-    gap: 100px;
-    justify-items: center;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 前がgridの分割数。後ろ1frは列幅を均等に分割するって意味 */
+  gap: 100px;
+  justify-items: center;
 }
 
-.grid-item img {
-    /* 子要素　左から配置される */
-    width: 300px;
-    height: 300px;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-    /* 滑らかに変化するようになる */
+.grid-container img {
+  /* 子要素　左から配置される */
+  width: 300px;
+  height: 300px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  /* 滑らかに変化するようになる */
 }
 
-.grid-item img:hover {
-    opacity: 1.0;
+.grid-container img:hover {
+  opacity: 1;
 }
 
 .plan {
-    background-color: #d0dfea;
-    padding-top: 50px;
+  background-color: #d0dfea;
+  padding-top: 50px;
 }
 
 .plan-title {
-    font-size: 40px;
-    letter-spacing: 10px;
-    text-align: center;
-    margin: 0;
-    /* この要素のmarginを打ち消すよって意味 */
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-align: center;
+  margin: 0;
+  /* この要素のmarginを打ち消すよって意味 */
 }
 
 .table-container {
-    width: 100%;
-    padding: 50px 0;
+  width: 100%;
+  padding: 50px 0;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
 }
 
-th, td {
-    padding: 10px ;
-    text-align: center;
-    border-left:  2px solid #fff;
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border-left: 2px solid #fff;
 }
 
-th:first-child, td:first-child {
-    /* thとtdの初めのborderを打ち消すって意味 */
-    border: none;
+th:first-child,
+td:first-child {
+  /* thとtdの初めのborderを打ち消すって意味 */
+  border: none;
 }
 
 th {
-    background-color: #6ba7eb;
-    font-size: 16px;
-    line-height: 16px;
-    white-space: nowrap;
-    /* セル内で折り返すなっていう指示 */
+  background-color: #6ba7eb;
+  font-size: 16px;
+  line-height: 16px;
+  white-space: nowrap;
+  /* セル内で折り返すなっていう指示 */
 }
 
 td {
-    font-size: 16px;
-    line-height: 26px;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 td:first-child {
-    font-weight: bold
+  font-weight: bold;
 }
 
 tr:nth-child(odd) {
-    background-color: #e0efff;
-    /* 偶数列 */
+  background-color: #e0efff;
+  /* 偶数列 */
 }
 
 tr:nth-child(even) {
-    background-color: #f9f9f9;
-    /* 奇数列 */
+  background-color: #f9f9f9;
+  /* 奇数列 */
 }
 
 .sns {
-    background-color: #e3f2fd;
-    padding: 200px 0;
-    text-align: center;
-    /* なんでこれで↑真ん中にアイコンが並ぶの？ */
+  background-color: #e3f2fd;
+  padding: 200px 0;
+  text-align: center;
+  /* なんでこれで↑真ん中にアイコンが並ぶの？ */
 }
 
 .sns-icon {
-    width: 185px;
-    padding: 25px 0; 
-    color: #8c8c8c;
-    overflow: hidden;
-    font-size: 40px;
+  width: 185px;
+  padding: 25px 0;
+  color: #8c8c8c;
+  overflow: hidden;
+  font-size: 40px;
 }
 
 .sns-icon:hover {
-    color: #fff;
-    transition: 0.5s;
+  color: #fff;
+  transition: 0.5s;
 }
 
 .inner {
-    width: 1100px;
-    margin: 0 auto;
+  width: 1100px;
+  margin: 0 auto;
 }
 
 footer {
-    background-color: #cfd8dc;
-    padding: 25px 0;
+  background-color: #cfd8dc;
+  padding: 25px 0;
 }
 
 .text-footer {
-    font-size: 13px;
-    letter-spacing: 0.5px;
-    text-align: right;
-    padding-right: 50px;
-    font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-align: right;
+  padding-right: 50px;
+  font-weight: bold;
+}
+
+/* TAB版 */
+@media screen and (max-width: 1199px) {
+  .inner {
+    width: 97%;
+  }
+  .keyvisual {
+    padding: 250px 0;
+  }
+
+  .news .inner {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-content {
+    max-width: 100%;
+  }
+
+  .news-icon {
+    max-width: 100%;
+  }
+
+  .news-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    /* 微妙な隙間どうしたらいい？ */
+  }
+
+  .grid-container img:nth-child(3n+3):not(:last-child) {
+    margin-bottom: 80px;
+    /* 3番目、7番目、11番目に適用される余白　※最後の要素は除外 */
+
+/* 以下は nth-child(3n + 3):not(:last-child) の意味を解説します：
+
+nth-child(3n + 3)
+意味:
+nth-child は特定の順番の子要素を選択するための擬似クラスです。
+3n + 3 は、3の倍数番目の要素（3, 6, 9...）を選択します。
+例えば、リストや画像の中で3番目、6番目、9番目の要素を指定する際に使用します。
+:not(:last-child)
+意味:
+:not はCSSの否定擬似クラスで、指定した条件に該当しない要素を選択します。
+:last-child はその親の最後の子要素を意味します。
+組み合わせることで、「最後の子要素ではない要素」を選択できます。
+組み合わせた意味
+nth-child(3n + 3):not(:last-child) の意味は：
+
+nth-child(3n + 3) により、3番目、6番目、9番目などの3の倍数番目の要素を選択します。
+:not(:last-child) により、「その中で最後の要素は除外」されます。 */
+
+  }
+
 }
