@@ -9,7 +9,14 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 0 100px;
+  align-items: center;
 }
+
+.fas {
+  height: 50px;
+  /* アイコンに高さをつけている */
+}
+
 i {
   height: 16px;
   width: 16px;
@@ -28,6 +35,24 @@ i {
   background-color: #333;
   transition: color 0.3s;
   transition: opacity 0.3s ease;
+}
+
+.hamburger-menu {
+  display: none;
+  /*デスクトップ版では非表示、sp版で表示 display: flex;がセット */
+  flex-direction: column;
+  justify-content: space-between;
+  /* 均等な感覚にあける */
+  width: 30px;
+  height: 25px;
+  /* 真ん中が0にしたときの高さ */
+}
+
+.hamburger-menu .line {
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
 }
 
 .keyvisual {
@@ -149,15 +174,15 @@ table {
   text-align: center;
 }
 
-th,
-td {
+th, td {
+  width: 25%;
+  /* テーブルの幅を均等にしている */
   padding: 10px;
   text-align: center;
   border-left: 2px solid #fff;
 }
 
-th:first-child,
-td:first-child {
+th:first-child, td:first-child {
   /* thとtdの初めのborderを打ち消すって意味 */
   border: none;
 }
@@ -193,7 +218,15 @@ tr:nth-child(even) {
   background-color: #e3f2fd;
   padding: 200px 0;
   text-align: center;
-  /* なんでこれで↑真ん中にアイコンが並ぶの？ */
+}
+
+.sns-container {
+    display: flex;
+    /* 子要素を水平方向に並べる */
+    justify-content: center;
+    /* アイコンを中央ぞろえ */
+    align-items: center;
+    /* アイコンを水平方向に揃える */
 }
 
 .sns-icon {
@@ -261,7 +294,6 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 0;
-    /* 微妙な隙間どうしたらいい？ */
   }
 
   .grid-container img:nth-child(3n+3):not(:last-child) {
@@ -288,4 +320,84 @@ nth-child(3n + 3) により、3番目、6番目、9番目などの3の倍数番�
 
   }
 
+}
+/* SP版 */
+@media screen and (max-width:767px) {
+  .inner {
+    width: 97%;
+  }
+
+  .hamburger-menu {
+    display: flex; /* SP版ではハンバーガーメニューを表示 */
+  }
+
+  .contact-button {
+    display: none; /* ContactボタンはSP版では非表示 */
+  }
+
+  .keyvisual {
+    padding: 200px 0;
+  }
+
+  .keyvisual-title {
+    font-size: 40px;
+  }
+
+  .keyvisual-subtitle {
+    font-size: 30px
+  }
+
+  .news {
+    padding: 0;
+  }
+
+  .news .inner {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-content {
+    max-width: 100%;
+  }
+
+  .news-icon {
+    max-width: 100%;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .grid-container img:nth-child(3n+3):not(:last-child) {
+    margin-bottom: 80px;
+  }
+
+  th {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  td {
+    font-size: 12px;
+  }
+
+  .sns {
+    padding: 50px 0;
+  }
+
+  .sns-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sns-icon {
+    padding: 50px 15px;
+    width: 100%;
+  }
 }
