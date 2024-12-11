@@ -1,4 +1,11 @@
 @charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  /* *:すべての要素を指す
+  margin: 0; すべての要素の外側の余白を0に設定する
+  ブラウザデフォルトの余白がなくなり、ぴったりに表示される */
+}
 
 header {
   background-color: #fff;
@@ -174,7 +181,8 @@ table {
   text-align: center;
 }
 
-th, td {
+th,
+td {
   width: 25%;
   /* テーブルの幅を均等にしている */
   padding: 10px;
@@ -182,7 +190,8 @@ th, td {
   border-left: 2px solid #fff;
 }
 
-th:first-child, td:first-child {
+th:first-child,
+td:first-child {
   /* thとtdの初めのborderを打ち消すって意味 */
   border: none;
 }
@@ -221,12 +230,12 @@ tr:nth-child(even) {
 }
 
 .sns-container {
-    display: flex;
-    /* 子要素を水平方向に並べる */
-    justify-content: center;
-    /* アイコンを中央ぞろえ */
-    align-items: center;
-    /* アイコンを水平方向に揃える */
+  display: flex;
+  /* 子要素を水平方向に並べる */
+  justify-content: center;
+  /* アイコンを中央ぞろえ */
+  align-items: center;
+  /* アイコンを水平方向に揃える */
 }
 
 .sns-icon {
@@ -294,13 +303,14 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 0;
+    /* 子要素に影響する */
   }
 
-  .grid-container img:nth-child(3n+3):not(:last-child) {
+  .grid-container img:nth-child(3n + 3):not(:last-child) {
     margin-bottom: 80px;
     /* 3番目、7番目、11番目に適用される余白　※最後の要素は除外 */
 
-/* 以下は nth-child(3n + 3):not(:last-child) の意味を解説します：
+    /* 以下は nth-child(3n + 3):not(:last-child) の意味を解説します：
 
 nth-child(3n + 3)
 意味:
@@ -317,16 +327,11 @@ nth-child(3n + 3):not(:last-child) の意味は：
 
 nth-child(3n + 3) により、3番目、6番目、9番目などの3の倍数番目の要素を選択します。
 :not(:last-child) により、「その中で最後の要素は除外」されます。 */
-
   }
-
 }
-/* SP版 */
-@media screen and (max-width:767px) {
-  .inner {
-    width: 97%;
-  }
 
+/* SP版 */
+@media screen and (max-width: 767px) {
   .hamburger-menu {
     display: flex; /* SP版ではハンバーガーメニューを表示 */
   }
@@ -344,37 +349,11 @@ nth-child(3n + 3) により、3番目、6番目、9番目などの3の倍数番�
   }
 
   .keyvisual-subtitle {
-    font-size: 30px
+    font-size: 30px;
   }
 
   .news {
     padding: 0;
-  }
-
-  .news .inner {
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .news-content {
-    max-width: 100%;
-  }
-
-  .news-icon {
-    max-width: 100%;
-  }
-
-  .grid-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-  }
-
-  .grid-container img:nth-child(3n+3):not(:last-child) {
-    margin-bottom: 80px;
   }
 
   th {
